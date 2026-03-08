@@ -16,8 +16,8 @@ const Hero = () => {
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <h1
-          className="font-black mb-8 reveal uppercase tracking-wide"
-          style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "13vw", lineHeight: 0.85, letterSpacing: "0.05em" }}
+          className="font-black mb-8 reveal uppercase tracking-tight"
+          style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "13vw", lineHeight: 0.85 }}
         >
           <span className="text-white block">YOUSSEF</span>
           <span
