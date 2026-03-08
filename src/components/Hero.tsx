@@ -33,7 +33,7 @@ const Hero = () => {
           className="font-black mb-8 reveal uppercase tracking-tight"
           style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "13vw", lineHeight: 0.85 }}
         >
-          <span className={`block ${isDark ? "text-white" : "text-foreground"}`}>YOUSSEF</span>
+          <span className={`block ${isDark ? "text-white" : "text-foreground"}`}>&lt;YOUSSEF</span>
           <span
             className="block"
             style={{
@@ -42,7 +42,7 @@ const Hero = () => {
               WebkitTextStrokeColor: isDark ? "hsl(210, 70%, 60%)" : "hsl(210, 60%, 50%)",
             }}
           >
-            DIAA
+            DIAA/&gt;
           </span>
         </h1>
         <p className={`text-xl md:text-2xl font-light tracking-wide max-w-none mx-auto reveal-delayed whitespace-nowrap ${isDark ? "text-white/70" : "text-foreground/60"}`}>
