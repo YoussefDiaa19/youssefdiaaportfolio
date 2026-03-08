@@ -52,7 +52,7 @@ const Certificates = () => {
             <AnimatedSection>
               <div className="group border-l-2 border-primary pl-6">
                 <p className="text-minimal text-muted-foreground mb-2">
-                  🏆 AWARD — FIRST YEAR
+                  AWARD — FIRST YEAR
                 </p>
                 <h4 className="text-2xl font-light mb-4 text-architectural">
                   Best Project — Problem Solving Course
@@ -67,7 +67,7 @@ const Certificates = () => {
             <AnimatedSection>
               <div className="group border-l-2 border-primary pl-6">
                 <p className="text-minimal text-muted-foreground mb-2">
-                  🏆 AWARD — FIRST YEAR
+                  AWARD — FIRST YEAR
                 </p>
                 <h4 className="text-2xl font-light mb-4 text-architectural">
                   Best Project — Digital Logic Design Course
