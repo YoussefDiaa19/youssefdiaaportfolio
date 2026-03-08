@@ -34,7 +34,7 @@ const Navigation = () => {
           }}
           className="text-lg font-semibold tracking-tight text-foreground"
         >
-          Youssef Diaa
+          HOME
         </a>
 
         <div className="hidden md:flex items-center space-x-12">
