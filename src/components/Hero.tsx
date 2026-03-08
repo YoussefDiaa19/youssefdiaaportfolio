@@ -23,8 +23,8 @@ const Hero = () => {
           <span
             className="block text-transparent"
             style={{
-              WebkitTextStroke: "1px hsl(210, 70%, 60%)",
-              paintOrder: "stroke fill",
+              textShadow:
+                "1px 0 0 hsl(210 70% 60%), -1px 0 0 hsl(210 70% 60%), 0 1px 0 hsl(210 70% 60%), 0 -1px 0 hsl(210 70% 60%), 1px 1px 0 hsl(210 70% 60%), -1px 1px 0 hsl(210 70% 60%), 1px -1px 0 hsl(210 70% 60%), -1px -1px 0 hsl(210 70% 60%)",
             }}
           >
             DIAA
