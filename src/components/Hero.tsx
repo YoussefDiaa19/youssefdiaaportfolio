@@ -1,5 +1,3 @@
-import MouseGlow from "@/components/MouseGlow";
-
 const Hero = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[hsl(220,20%,8%)]">
@@ -12,8 +10,6 @@ const Hero = () => {
           backgroundSize: "60px 60px",
         }}
       />
-
-      <MouseGlow />
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-light text-white text-architectural mb-8 reveal tracking-[-0.04em]">
