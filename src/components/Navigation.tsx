@@ -43,7 +43,7 @@ const Navigation = () => {
               key={link.href}
               href={link.href}
               onClick={(e) => handleClick(e, link.href)}
-              className="text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300"
+              className="text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-px after:bg-foreground hover:after:w-full after:transition-all after:duration-300"
             >
               {link.label}
             </a>

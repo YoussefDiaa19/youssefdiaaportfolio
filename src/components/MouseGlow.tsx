@@ -16,7 +16,7 @@ const MouseGlow = () => {
   }, []);
 
   return (
-    <div ref={glowRef} className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
+    <div ref={glowRef} className="pointer-events-none fixed inset-0 z-[1] overflow-hidden">
       <div
         className="absolute w-[600px] h-[600px] rounded-full opacity-30 blur-[120px] transition-transform duration-100 ease-out"
         style={{
