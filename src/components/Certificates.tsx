@@ -2,7 +2,7 @@ import AnimatedSection from "./AnimatedSection";
 
 const Certificates = () => {
   return (
-    <section id="certificates" className="py-32 bg-background">
+    <section id="certificates" className="py-32 bg-accent">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection>
