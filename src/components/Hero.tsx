@@ -9,21 +9,21 @@ const Hero = () => {
     <section
       className="relative h-screen flex items-center justify-center overflow-hidden transition-colors duration-500"
       style={{
-        backgroundColor: isDark ? "hsl(220, 20%, 8%)" : "hsl(220, 20%, 95%)",
-      }}
-    >
+        backgroundColor: isDark ? "hsl(220, 20%, 8%)" : "hsl(220, 20%, 95%)"
+      }}>
+      
       <MouseGlow />
       {/* Subtle grid pattern */}
       <div
         className="absolute inset-0"
         style={{
           opacity: isDark ? 0.03 : 0.15,
-          backgroundImage: isDark
-            ? "linear-gradient(hsl(210 50% 60%) 1px, transparent 1px), linear-gradient(90deg, hsl(210 50% 60%) 1px, transparent 1px)"
-            : "linear-gradient(hsl(210 30% 70%) 1px, transparent 1px), linear-gradient(90deg, hsl(210 30% 70%) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
+          backgroundImage: isDark ?
+          "linear-gradient(hsl(210 50% 60%) 1px, transparent 1px), linear-gradient(90deg, hsl(210 50% 60%) 1px, transparent 1px)" :
+          "linear-gradient(hsl(210 30% 70%) 1px, transparent 1px), linear-gradient(90deg, hsl(210 30% 70%) 1px, transparent 1px)",
+          backgroundSize: "60px 60px"
+        }} />
+      
 
       {/* Mouse glow pass-through layer */}
       <div className="absolute inset-0 z-[1] pointer-events-none" />
@@ -31,18 +31,18 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <h1
           className="font-black mb-8 reveal uppercase tracking-tight"
-          style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "13vw", lineHeight: 0.85 }}
-        >
-          <span className={`block ${isDark ? "text-white" : "text-foreground"}`}>&lt;YOUSSEF</span>
+          style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "13vw", lineHeight: 0.85 }}>
+          
+          <span className={`block ${isDark ? "text-white" : "text-foreground"}`}>YOUSSEF</span>
           <span
             className="block"
             style={{
               color: "transparent",
               WebkitTextStrokeWidth: "1px",
-              WebkitTextStrokeColor: isDark ? "hsl(210, 70%, 60%)" : "hsl(210, 60%, 50%)",
-            }}
-          >
-            DIAA/&gt;
+              WebkitTextStrokeColor: isDark ? "hsl(210, 70%, 60%)" : "hsl(210, 60%, 50%)"
+            }}>DIAA
+
+
           </span>
         </h1>
         <p className={`text-xl md:text-2xl font-light tracking-wide max-w-none mx-auto reveal-delayed whitespace-nowrap ${isDark ? "text-white/70" : "text-foreground/60"}`}>
@@ -56,8 +56,8 @@ const Hero = () => {
           SCROLL
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Hero;
