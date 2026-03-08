@@ -18,10 +18,22 @@ const Contact = () => {
                     EMAIL
                   </h4>
                   <a
-                    href="mailto:hello@youssefdiaa.com"
+                    href="mailto:youssefdiaa19@gmail.com"
                     className="text-xl hover:text-muted-foreground transition-colors duration-300"
                   >
-                    hello@youssefdiaa.com
+                    youssefdiaa19@gmail.com
+                  </a>
+                </div>
+
+                <div>
+                  <h4 className="text-minimal text-muted-foreground mb-2">
+                    PHONE
+                  </h4>
+                  <a
+                    href="tel:+201013277229"
+                    className="text-xl hover:text-muted-foreground transition-colors duration-300"
+                  >
+                    +20 101 327 7229
                   </a>
                 </div>
 
@@ -29,7 +41,7 @@ const Contact = () => {
                   <h4 className="text-minimal text-muted-foreground mb-2">
                     LOCATION
                   </h4>
-                  <p className="text-xl">Details from CV coming soon</p>
+                  <p className="text-xl">New Cairo, Cairo, Egypt</p>
                 </div>
               </div>
             </div>

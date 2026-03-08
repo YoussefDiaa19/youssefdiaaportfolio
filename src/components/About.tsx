@@ -12,14 +12,18 @@ const About = () => {
 
               <div className="space-y-8">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I'm Youssef Diaa, a Computer Science student specializing in
-                  Software Engineering. I'm passionate about building clean,
-                  efficient software solutions and continuously learning new
-                  technologies.
+                  I am a third-year Computer Science student at Misr International
+                  University with a strong passion for technology and problem-solving.
+                  I thrive in environments that challenge me to think critically and
+                  creatively, whether it's through coding, designing algorithms, or
+                  working collaboratively on innovative projects.
                 </p>
 
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I'll be adding more details from my CV soon — stay tuned!
+                  I specialize in Software Engineering, with experience spanning
+                  full-stack web development, UI/UX design, and building efficient
+                  software solutions. I'm always exploring new frameworks, tools,
+                  and best practices.
                 </p>
               </div>
             </div>
@@ -27,33 +31,53 @@ const About = () => {
             <div className="space-y-12">
               <div>
                 <h4 className="text-minimal text-muted-foreground mb-6">
-                  SKILLS
+                  TECHNICAL SKILLS
                 </h4>
                 <div className="space-y-6">
                   <div className="border-l-2 border-foreground pl-6">
                     <h5 className="text-lg font-medium mb-2">
-                      Software Engineering
+                      Programming Languages
                     </h5>
                     <p className="text-muted-foreground">
-                      Designing and building scalable, maintainable applications
+                      C++, Java, Python, JavaScript, SQL, HTML, CSS
                     </p>
                   </div>
                   <div className="border-l-2 border-foreground pl-6">
                     <h5 className="text-lg font-medium mb-2">
-                      Problem Solving
+                      Frameworks & Tools
                     </h5>
                     <p className="text-muted-foreground">
-                      Tackling complex challenges with clean, efficient
-                      solutions
+                      Node.js, Express, MongoDB, Git, SFML
                     </p>
                   </div>
                   <div className="border-l-2 border-foreground pl-6">
                     <h5 className="text-lg font-medium mb-2">
-                      Continuous Learning
+                      Software & Design
                     </h5>
                     <p className="text-muted-foreground">
-                      Always exploring new frameworks, tools, and best practices
+                      Microsoft Office Suite, Photoshop, Video Editing
                     </p>
+                  </div>
+                  <div className="border-l-2 border-foreground pl-6">
+                    <h5 className="text-lg font-medium mb-2">Languages</h5>
+                    <p className="text-muted-foreground">Arabic, English</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-8 border-t border-border">
+                <div className="grid grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="text-minimal text-muted-foreground mb-2">
+                      INTERESTS
+                    </h4>
+                    <p className="text-xl">Tennis Player & Coach</p>
+                  </div>
+                  <div>
+                    <h4 className="text-minimal text-muted-foreground mb-2">
+                      LOCATION
+                    </h4>
+                    <p className="text-xl">New Cairo, Egypt</p>
                   </div>
                 </div>
               </div>

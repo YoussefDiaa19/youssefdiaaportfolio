@@ -31,9 +31,10 @@ const Navigation = () => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          className="text-minimal text-foreground"
+          className="text-lg font-semibold tracking-tight text-foreground"
+          style={{ fontFamily: "'Georgia', 'Times New Roman', serif" }}
         >
-          YOUSSEF DIAA
+          Youssef Diaa
         </a>
 
         <div className="hidden md:flex items-center space-x-12">
