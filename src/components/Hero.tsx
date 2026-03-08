@@ -21,10 +21,11 @@ const Hero = () => {
         >
           <span className="text-white block">YOUSSEF</span>
           <span
-            className="block text-transparent"
+            className="block"
             style={{
-              textShadow:
-                "1px 0 0 hsl(210 70% 60%), -1px 0 0 hsl(210 70% 60%), 0 1px 0 hsl(210 70% 60%), 0 -1px 0 hsl(210 70% 60%), 1px 1px 0 hsl(210 70% 60%), -1px 1px 0 hsl(210 70% 60%), 1px -1px 0 hsl(210 70% 60%), -1px -1px 0 hsl(210 70% 60%)",
+              color: "transparent",
+              WebkitTextStrokeWidth: "1px",
+              WebkitTextStrokeColor: "hsl(210, 70%, 60%)",
             }}
           >
             DIAA
