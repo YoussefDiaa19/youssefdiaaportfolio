@@ -63,7 +63,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-32 bg-accent">
+    <section id="projects" className="py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection>
