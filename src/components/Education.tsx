@@ -23,13 +23,13 @@ const Education = () => {
                   </span>
                   <div>
                     <h4 className="text-2xl font-light mb-2 text-architectural">
-                      BSc in Computer Science
+                      Bachelor in Computer Science
                     </h4>
                     <p className="text-minimal text-muted-foreground mb-2">
                       MISR INTERNATIONAL UNIVERSITY · 2023 – PRESENT
                     </p>
                     <p className="text-minimal text-muted-foreground mb-4">
-                      THIRD YEAR
+                      THIRD YEAR · SOFTWARE DEVELOPMENT MAJOR
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
                       Relevant Coursework: Web Development, Algorithms, Data Structures,
@@ -52,12 +52,13 @@ const Education = () => {
                       Summer Internship — Digital Solutions (UI/UX)
                     </h4>
                     <p className="text-minimal text-muted-foreground mb-4">
-                      EL ARABI GROUP
+                      EL ARABY GROUP
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      Interned in the Digital Solutions team with a focus on UI/UX design,
-                      contributing to user interface research, wireframing, and design
-                      improvements for digital products.
+                      Interned in the Digital Solutions team with a focus on UI/UX design.
+                      Gained hands-on experience contributing to real-world projects,
+                      including user interface research, wireframing, prototyping, and
+                      design improvements for digital products used by actual customers.
                     </p>
                   </div>
                 </div>
