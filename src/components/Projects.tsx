@@ -1,3 +1,48 @@
+const projects = [
+  {
+    title: "Restaurant Website",
+    year: "Second Year",
+    course: "Web Development Course",
+    description:
+      "Developed a full-stack website in a group of 5 colleagues. The platform features a responsive design with separate interfaces for customers and administrators, including an interactive menu management system, real-time reservation handling, account management, and a comprehensive admin dashboard.",
+    tools: "HTML, CSS, JavaScript, Node.js, Express, MongoDB",
+  },
+  {
+    title: "Hangman Game",
+    year: "Second Year",
+    course: "Data Structures Course",
+    description:
+      "Developed a classic Hangman game using C++ in a group of 5 colleagues, focusing on efficient data structures for word selection and gameplay logic. Designed and implemented a graphical user interface using SFML to enhance interactivity and user experience.",
+    tools: "C++, SFML",
+  },
+  {
+    title: "Library Management System",
+    year: "Second Year",
+    course: "Object-Oriented Programming Course",
+    description:
+      "Built a Library Management System in a team of 5 colleagues to manage book inventory, user accounts, and borrowing records. Included functionalities for the admin to add, update, and remove books, as well as manage borrowers and track book availability.",
+    tools: "Java",
+  },
+  {
+    title: "Car Rental Management System",
+    year: "First Year",
+    course: "Problem Solving Course",
+    award: "🏆 Winner of Best Project",
+    description:
+      "Developed a Car Rental Management System in a group of 4 colleagues to manage customer bookings, vehicle availability, and rental transactions. Implemented features such as a user-friendly interface for adding, removing, and updating cars.",
+    tools: "C++",
+  },
+  {
+    title: "Calculator",
+    year: "First Year",
+    course: "Digital Logic Design Course",
+    award: "🏆 Winner of Best Project",
+    description:
+      "Created a Calculator in a group of 5 colleagues, designing the entire logic using gates and built a hardware model to perform basic operations.",
+    tools: "Digital Logic Gates, Hardware",
+  },
+];
+
 const Projects = () => {
   return (
     <section id="projects" className="py-32 bg-background">
@@ -12,33 +57,45 @@ const Projects = () => {
             </h3>
           </div>
 
-          <div className="space-y-24">
-            <div className="group">
-              <div className="relative overflow-hidden bg-muted rounded-sm">
-                <div className="h-[40vh] flex items-center justify-center">
-                  <p className="text-muted-foreground text-lg">
-                    Project screenshots coming soon
-                  </p>
+          <div className="space-y-20">
+            {projects.map((project, index) => (
+              <div key={index} className="group">
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div>
+                    <div className="flex items-center gap-3 mb-2">
+                      <span className="text-minimal text-muted-foreground font-medium">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                    </div>
+                    <h4 className="text-2xl font-light text-architectural mb-2">
+                      {project.title}
+                    </h4>
+                    <p className="text-minimal text-muted-foreground mb-1">
+                      {project.course.toUpperCase()}
+                    </p>
+                    <p className="text-minimal text-muted-foreground mb-2">
+                      {project.year.toUpperCase()}
+                    </p>
+                    {project.award && (
+                      <p className="text-sm font-medium text-foreground">
+                        {project.award}
+                      </p>
+                    )}
+                  </div>
+                  <div className="md:col-span-2">
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      {project.description}
+                    </p>
+                    <p className="text-minimal text-muted-foreground">
+                      TOOLS: {project.tools}
+                    </p>
+                  </div>
                 </div>
+                {index < projects.length - 1 && (
+                  <div className="border-b border-border mt-12" />
+                )}
               </div>
-
-              <div className="mt-8 grid md:grid-cols-3 gap-8">
-                <div>
-                  <h4 className="text-2xl font-light text-architectural mb-2">
-                    YOUR PROJECT
-                  </h4>
-                  <p className="text-minimal text-muted-foreground">
-                    TECH STACK HERE
-                  </p>
-                </div>
-                <div className="md:col-span-2">
-                  <p className="text-muted-foreground leading-relaxed">
-                    Upload your CV and I'll add your real projects with
-                    descriptions, tech stacks, and links.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
