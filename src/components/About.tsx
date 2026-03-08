@@ -7,52 +7,53 @@ const About = () => {
             <div>
               <h2 className="text-minimal text-muted-foreground mb-4">ABOUT</h2>
               <h3 className="text-4xl md:text-6xl font-light text-architectural mb-12">
-                Design Philosophy
+                Who I Am
               </h3>
-              
+
               <div className="space-y-8">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  We believe architecture should enhance human experience while respecting 
-                  the natural environment. Our practice focuses on creating spaces that 
-                  are both functional and poetic.
+                  I'm Youssef Diaa, a Computer Science student specializing in
+                  Software Engineering. I'm passionate about building clean,
+                  efficient software solutions and continuously learning new
+                  technologies.
                 </p>
-                
+
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Founded in 2015, our studio has completed over 200 projects across 
-                  residential, commercial, and cultural sectors. Each project begins 
-                  with careful listening and ends with thoughtful execution.
+                  I'll be adding more details from my CV soon — stay tuned!
                 </p>
               </div>
             </div>
-            
+
             <div className="space-y-12">
               <div>
-                <h4 className="text-minimal text-muted-foreground mb-6">APPROACH</h4>
+                <h4 className="text-minimal text-muted-foreground mb-6">
+                  SKILLS
+                </h4>
                 <div className="space-y-6">
-                  <div className="border-l-2 border-architectural pl-6">
-                    <h5 className="text-lg font-medium mb-2">Research</h5>
-                    <p className="text-muted-foreground">Deep understanding of context, culture, and climate</p>
+                  <div className="border-l-2 border-foreground pl-6">
+                    <h5 className="text-lg font-medium mb-2">
+                      Software Engineering
+                    </h5>
+                    <p className="text-muted-foreground">
+                      Designing and building scalable, maintainable applications
+                    </p>
                   </div>
-                  <div className="border-l-2 border-architectural pl-6">
-                    <h5 className="text-lg font-medium mb-2">Collaboration</h5>
-                    <p className="text-muted-foreground">Close partnership with clients, engineers, and craftspeople</p>
+                  <div className="border-l-2 border-foreground pl-6">
+                    <h5 className="text-lg font-medium mb-2">
+                      Problem Solving
+                    </h5>
+                    <p className="text-muted-foreground">
+                      Tackling complex challenges with clean, efficient
+                      solutions
+                    </p>
                   </div>
-                  <div className="border-l-2 border-architectural pl-6">
-                    <h5 className="text-lg font-medium mb-2">Innovation</h5>
-                    <p className="text-muted-foreground">Sustainable materials and forward-thinking design solutions</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="pt-8 border-t border-border">
-                <div className="grid grid-cols-2 gap-8">
-                  <div>
-                    <h4 className="text-minimal text-muted-foreground mb-2">FOUNDED</h4>
-                    <p className="text-xl">2015</p>
-                  </div>
-                  <div>
-                    <h4 className="text-minimal text-muted-foreground mb-2">PROJECTS</h4>
-                    <p className="text-xl">200+</p>
+                  <div className="border-l-2 border-foreground pl-6">
+                    <h5 className="text-lg font-medium mb-2">
+                      Continuous Learning
+                    </h5>
+                    <p className="text-muted-foreground">
+                      Always exploring new frameworks, tools, and best practices
+                    </p>
                   </div>
                 </div>
               </div>
