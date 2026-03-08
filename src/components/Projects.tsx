@@ -45,7 +45,7 @@ const projects = [
     title: "Car Rental Management System",
     year: "First Year",
     course: "Problem Solving Course",
-    award: "🏆 Winner of Best Project",
+    award: "Winner of Best Project",
     description:
       "Developed a Car Rental Management System in a group of 4 colleagues to manage customer bookings, vehicle availability, and rental transactions. Implemented features such as a user-friendly interface for adding, removing, and updating cars.",
     tools: "C++",
@@ -54,7 +54,7 @@ const projects = [
     title: "Calculator",
     year: "First Year",
     course: "Digital Logic Design Course",
-    award: "🏆 Winner of Best Project",
+    award: "Winner of Best Project",
     description:
       "Created a Calculator in a group of 5 colleagues, designing the entire logic using gates and built a hardware model to perform basic operations.",
     tools: "Digital Logic Gates, Hardware",

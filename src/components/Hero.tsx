@@ -16,15 +16,14 @@ const Hero = () => {
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <h1
-          className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 reveal uppercase"
-          style={{ fontFamily: "'Bebas Neue', sans-serif", lineHeight: 0.95 }}
+          className="text-7xl md:text-[10rem] lg:text-[12rem] font-black mb-8 reveal uppercase leading-none"
+          style={{ fontFamily: "'Bebas Neue', sans-serif", lineHeight: 0.85 }}
         >
-          <span className="text-white">YOUSSEF</span>
-          <br />
+          <span className="text-white block">YOUSSEF</span>
           <span
-            className="text-transparent"
+            className="block text-transparent"
             style={{
-              WebkitTextStroke: "2px white",
+              WebkitTextStroke: "1.5px hsl(210, 70%, 60%)",
             }}
           >
             DIAA
