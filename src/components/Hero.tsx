@@ -1,4 +1,5 @@
 import { useTheme } from "./ThemeProvider";
+import MouseGlow from "./MouseGlow";
 
 const Hero = () => {
   const { theme } = useTheme();
