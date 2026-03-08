@@ -32,7 +32,7 @@ const Hero = () => {
           </span>
         </h1>
         <p className="text-xl md:text-2xl text-white/70 font-light tracking-wide max-w-2xl mx-auto reveal-delayed">
-          Computer Science Student · Full Stack Software Engineer
+          Computer Science Student · Full Stack Developer · UI/UX Designer
         </p>
       </div>
 
