@@ -9,10 +9,12 @@ import Contact from "@/components/Contact";
 import ScrollProgress from "@/components/ScrollProgress";
 import Footer from "@/components/Footer";
 import MouseGlow from "@/components/MouseGlow";
+import CustomCursor from "@/components/CustomCursor";
 
 const Index = () => {
   return (
     <div className="min-h-screen relative">
+      <CustomCursor />
       <MouseGlow />
       <Navigation />
       <ScrollProgress />

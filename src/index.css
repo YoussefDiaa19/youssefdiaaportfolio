@@ -116,6 +116,11 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    cursor: none;
+  }
+
+  a, button, [role="button"], input, textarea, select, [tabindex] {
+    cursor: none;
   }
   
   /* Architectural Typography */

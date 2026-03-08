@@ -37,9 +37,9 @@ const skillCategories = [
   {
     title: "Soft Skills",
     skills: [
-      { name: "Documentation", icon: "" },
-      { name: "Problem Solving", icon: "" },
-      { name: "Team Collaboration", icon: "" },
+      { name: "Documentation", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/readthedocs/readthedocs-original.svg" },
+      { name: "Problem Solving", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/thealgorithms/thealgorithms-original.svg" },
+      { name: "Team Collaboration", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" },
     ],
   },
 ];
@@ -52,7 +52,7 @@ const Skills = () => {
           <AnimatedSection>
             <h2 className="text-minimal text-muted-foreground mb-4">SKILLS</h2>
             <h3 className="text-4xl md:text-6xl font-light text-architectural mb-16">
-              Technical Arsenal
+              Technical Skills
             </h3>
           </AnimatedSection>
 
