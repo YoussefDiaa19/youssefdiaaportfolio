@@ -34,32 +34,18 @@ const About = () => {
               <div className="space-y-12">
                 <div>
                   <h4 className="text-minimal text-muted-foreground mb-6">
-                    TECHNICAL SKILLS
+                    QUICK FACTS
                   </h4>
                   <div className="space-y-6">
                     <div className="border-l-2 border-foreground pl-6">
-                      <h5 className="text-lg font-medium mb-2">
-                        Programming Languages
-                      </h5>
+                      <h5 className="text-lg font-medium mb-2">University</h5>
                       <p className="text-muted-foreground">
-                        C++, Java, Python, JavaScript, PHP, SQL, HTML, CSS
+                        Misr International University — Computer Science
                       </p>
                     </div>
                     <div className="border-l-2 border-foreground pl-6">
-                      <h5 className="text-lg font-medium mb-2">
-                        Frameworks & Tools
-                      </h5>
-                      <p className="text-muted-foreground">
-                        Node.js, Express, Flask, MongoDB, Git, SFML
-                      </p>
-                    </div>
-                    <div className="border-l-2 border-foreground pl-6">
-                      <h5 className="text-lg font-medium mb-2">
-                        Software & Design
-                      </h5>
-                      <p className="text-muted-foreground">
-                        Microsoft Office Suite, Photoshop, Video Editing
-                      </p>
+                      <h5 className="text-lg font-medium mb-2">Year</h5>
+                      <p className="text-muted-foreground">Third Year</p>
                     </div>
                     <div className="border-l-2 border-foreground pl-6">
                       <h5 className="text-lg font-medium mb-2">Languages</h5>

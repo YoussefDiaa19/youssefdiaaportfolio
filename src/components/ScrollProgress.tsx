@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const sections = ["about", "education", "projects", "certificates", "contact"];
+const sections = ["about", "skills", "education", "projects", "certificates", "contact"];
 
 const ScrollProgress = () => {
   const [progress, setProgress] = useState(0);
