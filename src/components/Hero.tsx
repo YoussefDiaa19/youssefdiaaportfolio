@@ -16,8 +16,8 @@ const Hero = () => {
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <h1
-          className="font-black mb-8 reveal uppercase tracking-tight"
-          style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "13vw", lineHeight: 0.85 }}
+          className="font-black mb-8 reveal uppercase tracking-wide"
+          style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "13vw", lineHeight: 0.85, letterSpacing: "0.05em" }}
         >
           <span className="text-white block">YOUSSEF</span>
           <span
@@ -31,7 +31,7 @@ const Hero = () => {
             DIAA
           </span>
         </h1>
-        <p className="text-xl md:text-2xl text-white/70 font-light tracking-wide max-w-2xl mx-auto reveal-delayed">
+        <p className="text-xl md:text-2xl text-white/70 font-light tracking-wide max-w-none mx-auto reveal-delayed whitespace-nowrap">
           Computer Science Student · Full Stack Developer · UI/UX Designer
         </p>
       </div>
