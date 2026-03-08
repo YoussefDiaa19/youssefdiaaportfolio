@@ -12,6 +12,7 @@ const Hero = () => {
         backgroundColor: isDark ? "hsl(220, 20%, 8%)" : "hsl(220, 20%, 95%)",
       }}
     >
+      <MouseGlow />
       {/* Subtle grid pattern */}
       <div
         className="absolute inset-0"
