@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navLinks = [
   { label: "ABOUT", href: "#about" },
@@ -50,9 +49,6 @@ const Navigation = () => {
           ))}
         </div>
 
-        <div className="hidden md:flex items-center space-x-4">
-          <ThemeToggle />
-        </div>
 
         <Button
           variant="ghost"
@@ -77,9 +73,6 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
-            <div className="pt-4 border-t border-border">
-              <ThemeToggle />
-            </div>
           </div>
         </div>
       )}
