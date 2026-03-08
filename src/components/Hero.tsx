@@ -16,7 +16,7 @@ const Hero = () => {
           DIAA
         </h1>
         <p className="text-xl md:text-2xl text-white/80 font-light tracking-wide max-w-2xl mx-auto reveal-delayed">
-          Computer Science Student · Software Engineer
+          Computer Science Student · Full Stack Software Engineer
         </p>
       </div>
 

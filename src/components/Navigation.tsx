@@ -32,7 +32,6 @@ const Navigation = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
           className="text-lg font-semibold tracking-tight text-foreground"
-          style={{ fontFamily: "'Georgia', 'Times New Roman', serif" }}
         >
           Youssef Diaa
         </a>
