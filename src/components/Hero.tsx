@@ -11,8 +11,14 @@ const Hero = () => {
         }}
       />
 
+      {/* Mouse glow pass-through layer */}
+      <div className="absolute inset-0 z-[1] pointer-events-none" />
+
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-light text-white text-architectural mb-8 reveal tracking-[-0.04em]">
+        <h1
+          className="text-6xl md:text-8xl lg:text-9xl font-black text-white mb-8 reveal tracking-[-0.02em] uppercase"
+          style={{ fontFamily: "'Bebas Neue', sans-serif", lineHeight: 0.95 }}
+        >
           YOUSSEF
           <br />
           DIAA
