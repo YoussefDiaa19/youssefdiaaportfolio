@@ -1,4 +1,22 @@
+import AnimatedSection from "./AnimatedSection";
+
 const projects = [
+  {
+    title: "Schedule Timetable Management System",
+    year: "Third Year",
+    course: "Software Engineering Course",
+    description:
+      "Developed a schedule and timetable management system as part of the Software Engineering course. The platform allows administrators to create, manage, and organize class schedules efficiently, with features for conflict detection, room allocation, and dynamic timetable generation.",
+    tools: "PHP, HTML, CSS, JavaScript, SQL",
+  },
+  {
+    title: "Blink Jump — Dino Game with Eye Tracking",
+    year: "Third Year",
+    course: "Human-Computer Interaction Course",
+    description:
+      "Recreated the classic Chrome dinosaur jumping game with a twist — instead of pressing the spacebar, players control the jump by blinking. Used a Python backend with OpenCV and a blink-detection library to track eye movements through the webcam in real time. The frontend, built with HTML, CSS, and JavaScript, features selectable characters and adjustable difficulty levels. Flask was used to bridge the Python backend with the web interface.",
+    tools: "Python, Flask, OpenCV, HTML, CSS, JavaScript",
+  },
   {
     title: "Restaurant Website",
     year: "Second Year",
@@ -45,56 +63,60 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-32 bg-background">
+    <section id="projects" className="py-32 bg-accent">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-20">
-            <h2 className="text-minimal text-muted-foreground mb-4">
-              PROJECTS
-            </h2>
-            <h3 className="text-4xl md:text-6xl font-light text-architectural">
-              What I've Built
-            </h3>
-          </div>
+          <AnimatedSection>
+            <div className="mb-20">
+              <h2 className="text-minimal text-muted-foreground mb-4">
+                PROJECTS
+              </h2>
+              <h3 className="text-4xl md:text-6xl font-light text-architectural">
+                What I've Built
+              </h3>
+            </div>
+          </AnimatedSection>
 
           <div className="space-y-20">
             {projects.map((project, index) => (
-              <div key={index} className="group">
-                <div className="grid md:grid-cols-3 gap-8">
-                  <div>
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="text-minimal text-muted-foreground font-medium">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                    </div>
-                    <h4 className="text-2xl font-light text-architectural mb-2">
-                      {project.title}
-                    </h4>
-                    <p className="text-minimal text-muted-foreground mb-1">
-                      {project.course.toUpperCase()}
-                    </p>
-                    <p className="text-minimal text-muted-foreground mb-2">
-                      {project.year.toUpperCase()}
-                    </p>
-                    {project.award && (
-                      <p className="text-sm font-medium text-foreground">
-                        {project.award}
+              <AnimatedSection key={index}>
+                <div className="group">
+                  <div className="grid md:grid-cols-3 gap-8">
+                    <div>
+                      <div className="flex items-center gap-3 mb-2">
+                        <span className="text-minimal text-muted-foreground font-medium">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                      </div>
+                      <h4 className="text-2xl font-light text-architectural mb-2">
+                        {project.title}
+                      </h4>
+                      <p className="text-minimal text-muted-foreground mb-1">
+                        {project.course.toUpperCase()}
                       </p>
-                    )}
+                      <p className="text-minimal text-muted-foreground mb-2">
+                        {project.year.toUpperCase()}
+                      </p>
+                      {project.award && (
+                        <p className="text-sm font-medium text-foreground">
+                          {project.award}
+                        </p>
+                      )}
+                    </div>
+                    <div className="md:col-span-2">
+                      <p className="text-muted-foreground leading-relaxed mb-4">
+                        {project.description}
+                      </p>
+                      <p className="text-minimal text-muted-foreground">
+                        TOOLS: {project.tools}
+                      </p>
+                    </div>
                   </div>
-                  <div className="md:col-span-2">
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      {project.description}
-                    </p>
-                    <p className="text-minimal text-muted-foreground">
-                      TOOLS: {project.tools}
-                    </p>
-                  </div>
+                  {index < projects.length - 1 && (
+                    <div className="border-b border-border mt-12" />
+                  )}
                 </div>
-                {index < projects.length - 1 && (
-                  <div className="border-b border-border mt-12" />
-                )}
-              </div>
+              </AnimatedSection>
             ))}
           </div>
         </div>
