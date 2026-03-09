@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 
 const navLinks = [
   { label: "ABOUT", href: "#about" },
@@ -36,7 +37,7 @@ const Navigation = () => {
           &lt;YOUSSEF DIAA/&gt;
         </a>
 
-        <div className="hidden md:flex items-center space-x-12">
+        <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -47,8 +48,15 @@ const Navigation = () => {
               {link.label}
             </a>
           ))}
+          <a
+            href="/Youssef-Diaa-CV.pdf"
+            download
+            className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors duration-300 text-sm font-medium"
+          >
+            <Download size={16} />
+            Download CV
+          </a>
         </div>
-
 
         <Button
           variant="ghost"
@@ -73,6 +81,14 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
+            <a
+              href="/Youssef-Diaa-CV.pdf"
+              download
+              className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors duration-300 text-sm font-medium w-fit"
+            >
+              <Download size={16} />
+              Download CV
+            </a>
           </div>
         </div>
       )}
