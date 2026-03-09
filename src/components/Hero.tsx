@@ -49,30 +49,30 @@ const Hero = () => {
         <p className={`text-xl md:text-2xl font-light tracking-wide max-w-none mx-auto reveal-delayed whitespace-nowrap ${isDark ? "text-white/70" : "text-foreground/60"}`}>
           Computer Science Student · Full Stack Developer · UI/UX Designer
         </p>
-        <div className="flex items-center justify-center gap-4 mt-8 reveal-delayed">
+        <div className="flex items-center justify-center gap-3 mt-8 reveal-delayed">
           <a
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className={`w-12 h-12 rounded-full border flex items-center justify-center transition-all duration-300 ${
+            className={`w-10 h-10 border flex items-center justify-center transition-all duration-300 ${
               isDark 
-                ? "border-white/30 text-white hover:border-white hover:bg-white/10" 
-                : "border-foreground/30 text-foreground hover:border-foreground hover:bg-foreground/10"
+                ? "border-white/40 text-white/70 hover:border-white hover:text-white hover:bg-white/5" 
+                : "border-foreground/40 text-foreground/70 hover:border-foreground hover:text-foreground hover:bg-foreground/5"
             }`}
           >
-            <Linkedin size={20} />
+            <Linkedin size={18} />
           </a>
           <a
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className={`w-12 h-12 rounded-full border flex items-center justify-center transition-all duration-300 ${
+            className={`w-10 h-10 border flex items-center justify-center transition-all duration-300 ${
               isDark 
-                ? "border-white/30 text-white hover:border-white hover:bg-white/10" 
-                : "border-foreground/30 text-foreground hover:border-foreground hover:bg-foreground/10"
+                ? "border-white/40 text-white/70 hover:border-white hover:text-white hover:bg-white/5" 
+                : "border-foreground/40 text-foreground/70 hover:border-foreground hover:text-foreground hover:bg-foreground/5"
             }`}
           >
-            <Github size={20} />
+            <Github size={18} />
           </a>
         </div>
       </div>
