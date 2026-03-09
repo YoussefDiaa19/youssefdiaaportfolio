@@ -1,5 +1,6 @@
 import { useTheme } from "./ThemeProvider";
 import MouseGlow from "./MouseGlow";
+import { Linkedin, Github } from "lucide-react";
 
 const Hero = () => {
   const { theme } = useTheme();
@@ -48,6 +49,24 @@ const Hero = () => {
         <p className={`text-xl md:text-2xl font-light tracking-wide max-w-none mx-auto reveal-delayed whitespace-nowrap ${isDark ? "text-white/70" : "text-foreground/60"}`}>
           Computer Science Student · Full Stack Developer · UI/UX Designer
         </p>
+        <div className="flex items-center justify-center gap-5 mt-6 reveal-delayed">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/70 hover:text-white transition-colors duration-300"
+          >
+            <Linkedin size={24} />
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/70 hover:text-white transition-colors duration-300"
+          >
+            <Github size={24} />
+          </a>
+        </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 reveal-delayed">
