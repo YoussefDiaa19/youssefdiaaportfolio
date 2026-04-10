@@ -39,7 +39,7 @@ const Hero = () => {
             className="block"
             style={{
               color: "transparent",
-              WebkitTextStrokeWidth: "1px",
+              WebkitTextStrokeWidth: "2px",
               WebkitTextStrokeColor: isDark ? "hsl(210, 70%, 60%)" : "hsl(210, 60%, 50%)"
             }}>DIAA
 
