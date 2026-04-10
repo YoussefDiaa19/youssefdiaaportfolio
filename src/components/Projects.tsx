@@ -102,30 +102,12 @@ const Projects = () => {
                     </p>
                   </div>
                   <div className="md:col-span-2">
-                    <ul className="text-muted-foreground leading-relaxed mb-4 space-y-2 list-disc list-inside">
-                      <li>
-                        Developing a full-stack platform to facilitate pet breeding
-                        connections and community engagement, featuring distinct
-                        interfaces for pet owners and administrators.
-                      </li>
-                      <li>
-                        Implemented robust CRUD functionality for pet listings, a
-                        real-time messaging system with user-driven content reporting,
-                        and secure social authentication (Google & Facebook).
-                      </li>
-                      <li>
-                        Enhanced user experience with Dark Mode support and
-                        multi-language localization (English & Arabic).
-                      </li>
-                      <li>
-                        Includes a comprehensive admin dashboard for listing
-                        moderation, user management, and support inquiry handling,
-                        alongside push notifications powered by Firebase.
-                      </li>
-                      <li>
-                        Designed the entire UI/UX using Figma, focusing on a
-                        mobile-first, user-friendly experience.
-                      </li>
+                    <ul className="text-muted-foreground leading-relaxed mb-4 space-y-2 list-none">
+                      <li>- Developing a full-stack platform to facilitate pet breeding connections and community engagement, featuring distinct interfaces for pet owners and administrators.</li>
+                      <li>- Implemented robust CRUD functionality for pet listings, a real-time messaging system with user-driven content reporting, and secure social authentication (Google & Facebook).</li>
+                      <li>- Enhanced user experience with Dark Mode support and multi-language localization (English & Arabic).</li>
+                      <li>- Includes a comprehensive admin dashboard for listing moderation, user management, and support inquiry handling, alongside push notifications powered by Firebase.</li>
+                      <li>- Designed the entire UI/UX using Figma, focusing on a mobile-first, user-friendly experience.</li>
                     </ul>
                     <p className="text-minimal text-muted-foreground mb-6">
                       TOOLS: React, TypeScript, Tailwind CSS, Capacitor, Supabase
