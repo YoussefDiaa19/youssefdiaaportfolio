@@ -37,14 +37,18 @@ const Contact = () => {
 
             <div className="flex justify-center gap-6">
               <a
-                href="#"
+                href="https://github.com/YoussefDiaa19"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-2.5 border border-border rounded-full text-muted-foreground hover:text-foreground hover:border-foreground transition-all duration-300"
               >
                 <Github size={18} />
                 <span className="text-sm font-medium">GitHub</span>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/youssefdiaa19/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-2.5 border border-border rounded-full text-muted-foreground hover:text-foreground hover:border-foreground transition-all duration-300"
               >
                 <Linkedin size={18} />
