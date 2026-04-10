@@ -51,7 +51,7 @@ const Hero = () => {
         </p>
         <div className="flex items-center justify-center gap-6 mt-8 reveal-delayed">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/youssefdiaa19/"
             target="_blank"
             rel="noopener noreferrer"
             className={`flex items-center gap-2 px-5 py-2.5 border rounded-full transition-all duration-300 ${
@@ -64,7 +64,7 @@ const Hero = () => {
             <span className="text-sm font-medium">LinkedIn</span>
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/YoussefDiaa19"
             target="_blank"
             rel="noopener noreferrer"
             className={`flex items-center gap-2 px-5 py-2.5 border rounded-full transition-all duration-300 ${
