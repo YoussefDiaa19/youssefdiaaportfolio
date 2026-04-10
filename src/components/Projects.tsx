@@ -1,6 +1,6 @@
 import AnimatedSection from "./AnimatedSection";
 
-const projects = [
+const universityProjects = [
   {
     title: "Schedule Timetable Management System",
     year: "Third Year",
@@ -77,47 +77,141 @@ const Projects = () => {
             </div>
           </AnimatedSection>
 
-          <div className="space-y-20">
-            {projects.map((project, index) => (
-              <AnimatedSection key={index}>
-                <div className="group">
-                  <div className="grid md:grid-cols-3 gap-8">
-                    <div>
-                      <div className="flex items-center gap-3 mb-2">
-                        <span className="text-minimal text-muted-foreground font-medium">
-                          {String(index + 1).padStart(2, "0")}
-                        </span>
-                      </div>
-                      <h4 className="text-2xl font-light text-architectural mb-2">
-                        {project.title}
-                      </h4>
-                      <p className="text-minimal text-muted-foreground mb-1">
-                        {project.course.toUpperCase()}
-                      </p>
-                      <p className="text-minimal text-muted-foreground mb-2">
-                        {project.year.toUpperCase()}
-                      </p>
-                      {project.award && (
-                        <p className="text-sm font-medium text-foreground">
-                          {project.award}
-                        </p>
-                      )}
+          {/* Personal Projects */}
+          <div className="mb-24">
+            <AnimatedSection>
+              <h4 className="text-minimal text-muted-foreground mb-12 tracking-widest">
+                PERSONAL PROJECTS
+              </h4>
+            </AnimatedSection>
+
+            <AnimatedSection>
+              <div className="group">
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div>
+                    <div className="flex items-center gap-3 mb-2">
+                      <span className="text-minimal text-muted-foreground font-medium">
+                        01
+                      </span>
                     </div>
-                    <div className="md:col-span-2">
-                      <p className="text-muted-foreground leading-relaxed mb-4">
-                        {project.description}
-                      </p>
-                      <p className="text-minimal text-muted-foreground">
-                        TOOLS: {project.tools}
-                      </p>
+                    <h4 className="text-2xl font-light text-architectural mb-2">
+                      Shoflak Klba App
+                    </h4>
+                    <p className="text-minimal text-muted-foreground mb-2">
+                      IN DEVELOPMENT – TARGETING PLAY STORE & APP STORE
+                    </p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <ul className="text-muted-foreground leading-relaxed mb-4 space-y-2 list-disc list-inside">
+                      <li>
+                        Developing a full-stack platform to facilitate pet breeding
+                        connections and community engagement, featuring distinct
+                        interfaces for pet owners and administrators.
+                      </li>
+                      <li>
+                        Implemented robust CRUD functionality for pet listings, a
+                        real-time messaging system with user-driven content reporting,
+                        and secure social authentication (Google & Facebook).
+                      </li>
+                      <li>
+                        Enhanced user experience with Dark Mode support and
+                        multi-language localization (English & Arabic).
+                      </li>
+                      <li>
+                        Includes a comprehensive admin dashboard for listing
+                        moderation, user management, and support inquiry handling,
+                        alongside push notifications powered by Firebase.
+                      </li>
+                      <li>
+                        Designed the entire UI/UX using Figma, focusing on a
+                        mobile-first, user-friendly experience.
+                      </li>
+                    </ul>
+                    <p className="text-minimal text-muted-foreground mb-6">
+                      TOOLS: React, TypeScript, Tailwind CSS, Capacitor, Supabase
+                      (PostgreSQL, Realtime, Auth), Firebase (Cloud Messaging), Figma
+                    </p>
+
+                    {/* Embedded Landing Page Preview */}
+                    <div className="rounded-lg border border-border overflow-hidden shadow-lg">
+                      <div className="bg-muted px-4 py-2 flex items-center gap-2 border-b border-border">
+                        <div className="flex items-center gap-1.5">
+                          <div className="w-3 h-3 rounded-full bg-red-400" />
+                          <div className="w-3 h-3 rounded-full bg-yellow-400" />
+                          <div className="w-3 h-3 rounded-full bg-green-400" />
+                        </div>
+                        <div className="flex-1 mx-3">
+                          <div className="bg-background/60 rounded-md px-3 py-1 text-xs text-muted-foreground truncate">
+                            shoflakklba.vercel.app
+                          </div>
+                        </div>
+                      </div>
+                      <div className="h-[350px] overflow-hidden">
+                        <iframe
+                          src="https://shoflakklba.vercel.app/"
+                          title="Shoflak Klba Landing Page"
+                          className="w-full h-full border-0"
+                          loading="lazy"
+                          sandbox="allow-scripts allow-same-origin"
+                        />
+                      </div>
                     </div>
                   </div>
-                  {index < projects.length - 1 && (
-                    <div className="border-b border-border mt-12" />
-                  )}
                 </div>
-              </AnimatedSection>
-            ))}
+              </div>
+            </AnimatedSection>
+          </div>
+
+          {/* University Projects */}
+          <div>
+            <AnimatedSection>
+              <h4 className="text-minimal text-muted-foreground mb-12 tracking-widest">
+                UNIVERSITY PROJECTS
+              </h4>
+            </AnimatedSection>
+
+            <div className="space-y-20">
+              {universityProjects.map((project, index) => (
+                <AnimatedSection key={index}>
+                  <div className="group">
+                    <div className="grid md:grid-cols-3 gap-8">
+                      <div>
+                        <div className="flex items-center gap-3 mb-2">
+                          <span className="text-minimal text-muted-foreground font-medium">
+                            {String(index + 1).padStart(2, "0")}
+                          </span>
+                        </div>
+                        <h4 className="text-2xl font-light text-architectural mb-2">
+                          {project.title}
+                        </h4>
+                        <p className="text-minimal text-muted-foreground mb-1">
+                          {project.course.toUpperCase()}
+                        </p>
+                        <p className="text-minimal text-muted-foreground mb-2">
+                          {project.year.toUpperCase()}
+                        </p>
+                        {project.award && (
+                          <p className="text-sm font-medium text-foreground">
+                            {project.award}
+                          </p>
+                        )}
+                      </div>
+                      <div className="md:col-span-2">
+                        <p className="text-muted-foreground leading-relaxed mb-4">
+                          {project.description}
+                        </p>
+                        <p className="text-minimal text-muted-foreground">
+                          TOOLS: {project.tools}
+                        </p>
+                      </div>
+                    </div>
+                    {index < universityProjects.length - 1 && (
+                      <div className="border-b border-border mt-12" />
+                    )}
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
           </div>
         </div>
       </div>
