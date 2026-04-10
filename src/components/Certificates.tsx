@@ -36,7 +36,7 @@ const Certificates = () => {
             <AnimatedSection>
               <div className="group border-l-2 border-foreground pl-6">
                 <p className="text-minimal text-muted-foreground mb-2">
-                  GOOGLE · COURSERA — IN PROGRESS
+                  GOOGLE · COURSERA — COMPLETED
                 </p>
                 <h4 className="text-2xl font-light mb-4 text-architectural">
                   Start the UX Design Process: Empathize, Define, and Ideate
