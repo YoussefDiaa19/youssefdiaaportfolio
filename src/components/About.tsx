@@ -15,18 +15,11 @@ const About = () => {
 
                 <div className="space-y-8">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    I am a third-year Computer Science student at Misr International
-                    University with a strong passion for technology and problem-solving.
-                    I thrive in environments that challenge me to think critically and
-                    creatively, whether it's through coding, designing algorithms, or
-                    working collaboratively on innovative projects.
-                  </p>
-
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    I specialize in Software Engineering, with experience spanning
-                    full-stack web development, UI/UX design, and building efficient
-                    software solutions. I'm always exploring new frameworks, tools,
-                    and best practices.
+                    Third-year Computer Science student at MIU with strong full-stack
+                    development skills and a keen eye for UI/UX. Creative, collaborative,
+                    and comfortable working in teams to turn ideas into real products.
+                    I care about how things work and how they feel and I'm always looking
+                    to build something people actually want to use.
                   </p>
                 </div>
               </div>
