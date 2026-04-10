@@ -107,6 +107,7 @@ const Projects = () => {
                       <li>- Implemented robust CRUD functionality for pet listings, a real-time messaging system with user-driven content reporting, and secure social authentication (Google & Facebook).</li>
                       <li>- Enhanced user experience with Dark Mode support and multi-language localization (English & Arabic).</li>
                       <li>- Includes a comprehensive admin dashboard for listing moderation, user management, and support inquiry handling, alongside push notifications powered by Firebase.</li>
+                      <li>Designed and deployed a dedicated landing page for the app.</li>
                       <li>- Designed the entire UI/UX using Figma, focusing on a mobile-first, user-friendly experience.</li>
                     </ul>
                     <p className="text-minimal text-muted-foreground mb-6">
