@@ -50,6 +50,21 @@ const Certificates = () => {
             </AnimatedSection>
 
             <AnimatedSection>
+              <div className="group border-l-2 border-foreground pl-6">
+                <p className="text-minimal text-muted-foreground mb-2">
+                  IBM · COURSERA — COMPLETED
+                </p>
+                <h4 className="text-2xl font-light mb-4 text-architectural">
+                  Generative AI: Prompt Engineering Basics
+                </h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  Covers core prompt engineering techniques including chain-of-thought, tree-of-thought, and multimodal prompting to 
+guide generative AI models toward accurate, reasoned, and neutral outputs.
+                </p>
+              </div>
+            </AnimatedSection>
+            
+            <AnimatedSection>
               <div className="group border-l-2 border-primary pl-6">
                 <p className="text-minimal text-muted-foreground mb-2">
                   AWARD — FIRST YEAR
