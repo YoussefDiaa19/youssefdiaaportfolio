@@ -49,7 +49,7 @@ const Navigation = () => {
             </a>
           ))}
           <a
-            href="/Youssef-Diaa-CV.pdf"
+            href="/my.cv.pdf"
             download
             className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors duration-300 text-sm font-medium"
           >
@@ -82,7 +82,7 @@ const Navigation = () => {
               </a>
             ))}
             <a
-              href="/Youssef-Diaa-CV.pdf"
+              href="/my.cv.pdf"
               download
               className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors duration-300 text-sm font-medium w-fit"
             >
