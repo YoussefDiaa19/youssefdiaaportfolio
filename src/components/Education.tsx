@@ -29,7 +29,7 @@ const Education = () => {
                       MISR INTERNATIONAL UNIVERSITY · 2023 – PRESENT
                     </p>
                     <p className="text-minimal text-muted-foreground mb-4">
-                      THIRD YEAR · SOFTWARE DEVELOPMENT MAJOR
+                      SENIOR YEAR · SOFTWARE DEVELOPMENT MAJOR
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
                       Relevant Coursework: Web Development, Algorithms, Data Structures,
