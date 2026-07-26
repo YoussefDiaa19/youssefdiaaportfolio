@@ -15,7 +15,7 @@ const About = () => {
 
                 <div className="space-y-8">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    Third-year Computer Science student at MIU with strong full-stack
+                    Senior Computer Science student at MIU with strong full-stack
                     development skills and a keen eye for UI/UX. Creative, collaborative,
                     and comfortable working in teams to turn ideas into real products.
                     I care about how things work and how they feel and I'm always looking
@@ -38,7 +38,7 @@ const About = () => {
                     </div>
                     <div className="border-l-2 border-foreground pl-6">
                       <h5 className="text-lg font-medium mb-2">Year</h5>
-                      <p className="text-muted-foreground">Third Year</p>
+                      <p className="text-muted-foreground">Senior Year</p>
                     </div>
                     <div className="border-l-2 border-foreground pl-6">
                       <h5 className="text-lg font-medium mb-2">Languages</h5>
