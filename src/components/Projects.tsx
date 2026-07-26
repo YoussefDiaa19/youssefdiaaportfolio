@@ -98,13 +98,13 @@ const Projects = () => {
                       Shoflak Klba App
                     </h4>
                     <p className="text-minimal text-muted-foreground mb-2">
-                      IN DEVELOPMENT – TARGETING PLAY STORE & APP STORE
+                      IN PRODUCTION –  APP STORE & PLAY STORE
                     </p>
                   </div>
                   <div className="md:col-span-2">
                     <ul className="text-muted-foreground leading-relaxed mb-4 space-y-2 list-none">
-                      <li>- Developing a full-stack platform to facilitate pet breeding connections and community engagement, featuring distinct interfaces for pet owners and administrators.</li>
-                      <li>- Implemented robust CRUD functionality for pet listings, a real-time messaging system with user-driven content reporting, and secure social authentication (Google & Facebook).</li>
+                      <li>- Developed a full-stack platform to facilitate pet breeding connections and community engagement, featuring distinct interfaces for pet owners and administrators.</li>
+                      <li>- Implemented robust CRUD functionality for pet listings, a real-time messaging system with user-driven content reporting, and secure social authentication (Google & Apple).</li>
                       <li>- Enhanced user experience with Dark Mode support and multi-language localization (English & Arabic).</li>
                       <li>- Includes a comprehensive admin dashboard for listing moderation, user management, and support inquiry handling, alongside push notifications powered by Firebase.</li>
                       <li>- Designed and deployed a dedicated landing page for the app.</li>
@@ -112,7 +112,7 @@ const Projects = () => {
                     </ul>
                     <p className="text-minimal text-muted-foreground mb-6">
                       TOOLS: React, TypeScript, Tailwind CSS, Capacitor, Supabase
-                      (PostgreSQL, Realtime, Auth), Firebase (Cloud Messaging), Figma
+                      (PostgreSQL, Realtime, Auth), Firebase (Cloud Messaging), CloudFlare R2 (Storage), Figma
                     </p>
 
                     {/* Embedded Landing Page Preview */}
@@ -125,13 +125,13 @@ const Projects = () => {
                         </div>
                         <div className="flex-1 mx-3">
                           <div className="bg-background/60 rounded-md px-3 py-1 text-xs text-muted-foreground truncate">
-                            shoflakklba.vercel.app
+                            shoflakklba.app
                           </div>
                         </div>
                       </div>
                       <div className="h-[350px] overflow-hidden">
                         <iframe
-                          src="https://shoflakklba.vercel.app/"
+                          src="https://shoflakklba.app/"
                           title="Shoflak Klba Landing Page"
                           className="w-full h-full border-0"
                           loading="lazy"
