@@ -4,10 +4,11 @@ import { Download } from "lucide-react";
 
 const navLinks = [
   { label: "ABOUT", href: "#about" },
-  { label: "SKILLS", href: "#skills" },
   { label: "EDUCATION", href: "#education" },
+  { label: "EXPERIENCE", href: "#experience" },
   { label: "PROJECTS", href: "#projects" },
-  { label: "CERTIFICATES", href: "#certificates" },
+  { label: "SKILLS", href: "#skills" },
+  { label: "CERTIFICATIONS", href: "#certifications" },
   { label: "CONTACT", href: "#contact" },
 ];
 
@@ -49,8 +50,8 @@ const Navigation = () => {
             </a>
           ))}
           <a
-            href="/my.cv.pdf"
-            download
+            href="/Youssef%20Diaa%20CV.pdf"
+            download="Youssef Diaa CV.pdf"
             className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors duration-300 text-sm font-medium"
           >
             <Download size={16} />
@@ -82,8 +83,8 @@ const Navigation = () => {
               </a>
             ))}
             <a
-              href="/my.cv.pdf"
-              download
+              href="/Youssef%20Diaa%20CV.pdf"
+              download="Youssef Diaa CV.pdf"
               className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors duration-300 text-sm font-medium w-fit"
             >
               <Download size={16} />

@@ -1,69 +1,113 @@
 import AnimatedSection from "./AnimatedSection";
+import { ExternalLink, Github } from "lucide-react";
 
-const universityProjects = [
+interface ProjectItem {
+  id: string;
+  title: string;
+  badge?: string;
+  logo?: string;
+  link?: {
+    label: string;
+    url: string;
+    type: "app" | "github";
+  };
+  bullets?: string[];
+  description?: string;
+  tools: string;
+  hasPreview?: boolean;
+}
+
+const projects: ProjectItem[] = [
   {
+    id: "01",
+    title: "Shoflak Klba App",
+    badge: "IN PRODUCTION WITH 7,600+ USERS – APP STORE & PLAY STORE",
+    logo: "/images/logos/shoflak-klba.png",
+    link: {
+      label: "App Link",
+      url: "https://shoflakklba.app/",
+      type: "app",
+    },
+    bullets: [
+      "Built and scaled a cross-platform iOS & Android pet-matching and community app solo from zero to 7,600+ active users (4.5k+ iOS, 3k+ Android) in 3 months.",
+      "Architected the full-stack backend and media pipeline using Supabase (PostgreSQL, Realtime, Auth) and Cloudflare R2, supporting real-time chat, user reporting, and Google/Apple OAuth.",
+      "Engineered a comprehensive admin dashboard for content moderation, user management, and in-app promotional banner/pop-up ad placements, paired with Firebase Cloud Messaging push notifications.",
+      "Designed a mobile-first, bilingual (Arabic & English) UI/UX in Figma with Dark Mode support and deployed the companion product landing page.",
+    ],
+    tools:
+      "React, TypeScript, Tailwind CSS, Capacitor, Supabase (PostgreSQL, Realtime, Auth), Firebase (Cloud Messaging), Figma, Cloudflare R2 (Storage)",
+    hasPreview: true,
+  },
+  {
+    id: "02",
+    title: "SwapIt",
+    link: {
+      label: "GitHub",
+      url: "https://github.com/YoussefDiaa19/Swap-It",
+      type: "github",
+    },
+    bullets: [
+      "Developed a peer-to-peer mobile trading application enabling users to list items and exchange products directly with other users.",
+      "Implemented real-time in-app chat functionality allowing users to negotiate and coordinate item swaps seamlessly.",
+    ],
+    tools: "Flutter, Dart, Supabase",
+  },
+  {
+    id: "03",
+    title: "Course Management System",
+    link: {
+      label: "GitHub",
+      url: "https://github.com/nouramr52/CourseManagementSystem",
+      type: "github",
+    },
+    bullets: [
+      "Developed a full-stack academic administration platform supporting course creation, student enrollment, instructor dashboards, file uploads (Multer), and role-based access control (Student, Instructor, Admin) with JWT and Supabase OAuth.",
+      "Architected a clean, maintainable backend adhering to SOLID principles using Factory, Observer, Repository, Service Layer, and Middleware Factory patterns with DTO validation and centralized error handling.",
+    ],
+    tools:
+      "React, Vite, React Router, Axios, Node.js, Express, Prisma ORM, PostgreSQL, Supabase, JWT",
+  },
+  {
+    id: "04",
     title: "Schedule Timetable Management System",
-    year: "Third Year",
-    course: "Software Engineering Course",
+    link: {
+      label: "GitHub",
+      url: "https://github.com/YoussefDiaa19/TimeTableManagementSystem",
+      type: "github",
+    },
     description:
-      "Developed a schedule and timetable management system as part of the Software Engineering course. The platform allows administrators to create, manage, and organize class schedules efficiently, with features for conflict detection, room allocation, and dynamic timetable generation.",
+      "Built a web-based scheduling platform enabling administrators to create and organize academic class schedules with automated conflict detection, room allocation, and dynamic timetable generation.",
     tools: "PHP, HTML, CSS, JavaScript, SQL",
   },
   {
-    title: "Blink Jump — Dino Game with Eye Tracking",
-    year: "Third Year",
-    course: "Human-Computer Interaction Course",
+    id: "05",
+    title: "Dino Game with Eye Tracking",
+    link: {
+      label: "GitHub",
+      url: "https://github.com/YoussefDiaa19/dinoJumpingGame",
+      type: "github",
+    },
     description:
-      "Recreated the classic Chrome dinosaur jumping game with a twist — instead of pressing the spacebar, players control the jump by blinking. Used a Python backend with OpenCV and a blink-detection library to track eye movements through the webcam in real time. The frontend, built with HTML, CSS, and JavaScript, features selectable characters and adjustable difficulty levels. Flask was used to bridge the Python backend with the web interface.",
+      "Recreated the classic Chrome runner game with hands-free accessibility controls, replacing keyboard input with real-time blink detection via computer vision.",
     tools: "Python, Flask, OpenCV, HTML, CSS, JavaScript",
   },
   {
+    id: "06",
     title: "Restaurant Website",
-    year: "Second Year",
-    course: "Web Development Course",
+    link: {
+      label: "GitHub",
+      url: "https://github.com/ammarelghamry16/The-Restaurant-Website",
+      type: "github",
+    },
     description:
-      "Developed a full-stack website in a group of 5 colleagues. The platform features a responsive design with separate interfaces for customers and administrators, including an interactive menu management system, real-time reservation handling, account management, and a comprehensive admin dashboard.",
+      "Developed a responsive full-stack web application with separate customer and admin interfaces, featuring interactive menu management, real-time table reservations, user authentication, and an admin dashboard.",
     tools: "HTML, CSS, JavaScript, Node.js, Express, MongoDB",
-  },
-  {
-    title: "Hangman Game",
-    year: "Second Year",
-    course: "Data Structures Course",
-    description:
-      "Developed a classic Hangman game using C++ in a group of 5 colleagues, focusing on efficient data structures for word selection and gameplay logic. Designed and implemented a graphical user interface using SFML to enhance interactivity and user experience.",
-    tools: "C++, SFML",
-  },
-  {
-    title: "Library Management System",
-    year: "Second Year",
-    course: "Object-Oriented Programming Course",
-    description:
-      "Built a Library Management System in a team of 5 colleagues to manage book inventory, user accounts, and borrowing records. Included functionalities for the admin to add, update, and remove books, as well as manage borrowers and track book availability.",
-    tools: "Java",
-  },
-  {
-    title: "Car Rental Management System",
-    year: "First Year",
-    course: "Problem Solving Course",
-    award: "Winner of Best Project",
-    description:
-      "Developed a Car Rental Management System in a group of 4 colleagues to manage customer bookings, vehicle availability, and rental transactions. Implemented features such as a user-friendly interface for adding, removing, and updating cars.",
-    tools: "C++",
-  },
-  {
-    title: "Calculator",
-    year: "First Year",
-    course: "Digital Logic Design Course",
-    award: "Winner of Best Project",
-    description:
-      "Created a Calculator in a group of 5 colleagues, designing the entire logic using gates and built a hardware model to perform basic operations.",
-    tools: "Digital Logic Gates, Hardware",
   },
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-32 bg-background">
+    <section id="projects" className="py-32 bg-accent">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection>
@@ -77,124 +121,112 @@ const Projects = () => {
             </div>
           </AnimatedSection>
 
-          {/* Personal Projects */}
-          <div className="mb-24">
-            <AnimatedSection>
-              <h4 className="text-minimal text-muted-foreground mb-12 tracking-widest">
-                PERSONAL PROJECTS
-              </h4>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <div className="group">
-                <div className="grid md:grid-cols-3 gap-8">
-                  <div>
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="text-minimal text-muted-foreground font-medium">
-                        01
-                      </span>
-                    </div>
-                    <h4 className="text-2xl font-light text-architectural mb-2">
-                      Shoflak Klba App
-                    </h4>
-                    <p className="text-minimal text-muted-foreground mb-2">
-                      IN PRODUCTION –  APP STORE & PLAY STORE
-                    </p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <ul className="text-muted-foreground leading-relaxed mb-4 space-y-2 list-none">
-                      <li>- Developed a full-stack platform to facilitate pet breeding connections and community engagement, featuring distinct interfaces for pet owners and administrators.</li>
-                      <li>- Implemented robust CRUD functionality for pet listings, a real-time messaging system with user-driven content reporting, and secure social authentication (Google & Apple).</li>
-                      <li>- Enhanced user experience with Dark Mode support and multi-language localization (English & Arabic).</li>
-                      <li>- Includes a comprehensive admin dashboard for listing moderation, user management, and support inquiry handling, alongside push notifications powered by Firebase.</li>
-                      <li>- Designed and deployed a dedicated landing page for the app.</li>
-                      <li>- Designed the entire UI/UX using Figma, focusing on a mobile-first, user-friendly experience.</li>
-                    </ul>
-                    <p className="text-minimal text-muted-foreground mb-6">
-                      TOOLS: React, TypeScript, Tailwind CSS, Capacitor, Supabase
-                      (PostgreSQL, Realtime, Auth), Firebase (Cloud Messaging), CloudFlare R2 (Storage), Figma
-                    </p>
-
-                    {/* Embedded Landing Page Preview */}
-                    <div className="rounded-lg border border-border overflow-hidden shadow-lg">
-                      <div className="bg-muted px-4 py-2 flex items-center gap-2 border-b border-border">
-                        <div className="flex items-center gap-1.5">
-                          <div className="w-3 h-3 rounded-full bg-red-400" />
-                          <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                          <div className="w-3 h-3 rounded-full bg-green-400" />
-                        </div>
-                        <div className="flex-1 mx-3">
-                          <div className="bg-background/60 rounded-md px-3 py-1 text-xs text-muted-foreground truncate">
-                            shoflakklba.app
-                          </div>
-                        </div>
+          <div className="space-y-20">
+            {projects.map((project, index) => (
+              <AnimatedSection key={project.id}>
+                <div className="group">
+                  <div className="grid md:grid-cols-3 gap-8">
+                    <div>
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="text-minimal text-muted-foreground font-medium">
+                          {project.id}
+                        </span>
                       </div>
-                      <div className="h-[350px] overflow-hidden">
-                        <iframe
-                          src="https://shoflakklba.app/"
-                          title="Shoflak Klba Landing Page"
-                          className="w-full h-full border-0"
-                          loading="lazy"
-                          sandbox="allow-scripts allow-same-origin"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-
-          {/* University Projects */}
-          <div>
-            <AnimatedSection>
-              <h4 className="text-minimal text-muted-foreground mb-12 tracking-widest">
-                UNIVERSITY PROJECTS
-              </h4>
-            </AnimatedSection>
-
-            <div className="space-y-20">
-              {universityProjects.map((project, index) => (
-                <AnimatedSection key={index}>
-                  <div className="group">
-                    <div className="grid md:grid-cols-3 gap-8">
-                      <div>
-                        <div className="flex items-center gap-3 mb-2">
-                          <span className="text-minimal text-muted-foreground font-medium">
-                            {String(index + 1).padStart(2, "0")}
-                          </span>
+                      {project.logo && (
+                        <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-3xl bg-white p-2 border border-border shadow-lg overflow-hidden flex items-center justify-center mb-4 hover:scale-105 transition-transform duration-300">
+                          <img
+                            src={project.logo}
+                            alt={`${project.title} icon`}
+                            className="w-full h-full object-contain"
+                          />
                         </div>
-                        <h4 className="text-2xl font-light text-architectural mb-2">
-                          {project.title}
-                        </h4>
-                        <p className="text-minimal text-muted-foreground mb-1">
-                          {project.course.toUpperCase()}
+                      )}
+                      <h4 className="text-2xl font-light text-architectural mb-2">
+                        {project.title}
+                      </h4>
+                      {project.badge && (
+                        <p className="text-minimal text-primary font-medium mb-3">
+                          {project.badge}
                         </p>
-                        <p className="text-minimal text-muted-foreground mb-2">
-                          {project.year.toUpperCase()}
-                        </p>
-                        {project.award && (
-                          <p className="text-sm font-medium text-foreground">
-                            {project.award}
-                          </p>
-                        )}
-                      </div>
-                      <div className="md:col-span-2">
+                      )}
+                      {project.link && (
+                        <div className="mt-2 mb-4">
+                          <a
+                            href={project.link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-medium border border-border rounded-full text-foreground/80 hover:text-foreground hover:border-foreground/60 transition-all duration-300"
+                          >
+                            {project.link.type === "github" ? (
+                              <Github size={14} />
+                            ) : (
+                              <ExternalLink size={14} />
+                            )}
+                            <span>{project.link.label}</span>
+                          </a>
+                        </div>
+                      )}
+                    </div>
+
+                    <div className="md:col-span-2">
+                      {project.bullets ? (
+                        <ul className="text-muted-foreground leading-relaxed mb-4 space-y-2 list-none">
+                          {project.bullets.map((bullet, bIdx) => (
+                            <li key={bIdx} className="flex items-start gap-2">
+                              <span className="text-foreground/60 select-none">•</span>
+                              <span>{bullet}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
                         <p className="text-muted-foreground leading-relaxed mb-4">
                           {project.description}
                         </p>
-                        <p className="text-minimal text-muted-foreground">
-                          TOOLS: {project.tools}
-                        </p>
-                      </div>
+                      )}
+
+                      <p className="text-minimal text-muted-foreground mb-6">
+                        TOOLS: {project.tools}
+                      </p>
+
+                      {project.hasPreview && (
+                        <div className="rounded-lg border border-border overflow-hidden shadow-lg mt-6">
+                          <div className="bg-muted px-4 py-2 flex items-center justify-between border-b border-border">
+                            <div className="flex items-center gap-1.5">
+                              <div className="w-3 h-3 rounded-full bg-red-400" />
+                              <div className="w-3 h-3 rounded-full bg-yellow-400" />
+                              <div className="w-3 h-3 rounded-full bg-green-400" />
+                            </div>
+                            <div className="flex-1 mx-3">
+                              <a
+                                href="https://shoflakklba.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1.5 bg-background/60 hover:bg-background/90 rounded-md px-3 py-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                              >
+                                <span>App Link</span>
+                                <ExternalLink size={12} />
+                              </a>
+                            </div>
+                          </div>
+                          <div className="h-[350px] overflow-hidden">
+                            <iframe
+                              src="https://shoflakklba.app/"
+                              title="Shoflak Klba Landing Page"
+                              className="w-full h-full border-0"
+                              loading="lazy"
+                              sandbox="allow-scripts allow-same-origin"
+                            />
+                          </div>
+                        </div>
+                      )}
                     </div>
-                    {index < universityProjects.length - 1 && (
-                      <div className="border-b border-border mt-12" />
-                    )}
                   </div>
-                </AnimatedSection>
-              ))}
-            </div>
+                  {index < projects.length - 1 && (
+                    <div className="border-b border-border mt-16" />
+                  )}
+                </div>
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </div>

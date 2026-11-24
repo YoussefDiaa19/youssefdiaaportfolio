@@ -31,7 +31,7 @@ const Contact = () => {
               </a>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin size={18} />
-                <span>New Cairo, Egypt</span>
+                <span>Cairo, Egypt</span>
               </div>
             </div>
 

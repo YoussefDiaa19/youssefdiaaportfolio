@@ -15,11 +15,7 @@ const About = () => {
 
                 <div className="space-y-8">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    Senior Computer Science student at MIU with strong full-stack
-                    development skills and a keen eye for UI/UX. Creative, collaborative,
-                    and comfortable working in teams to turn ideas into real products.
-                    I care about how things work and how they feel and I'm always looking
-                    to build something people actually want to use.
+                    Senior Computer Science student at MIU with hands-on experience building full-stack web applications, cross-platform mobile apps, and intuitive user interfaces. Proven ability to take products from initial wireframes to live deployment—including a mobile platform serving 7,600+ active users. Fast learner who thrives in collaborative teams and focuses on clean architecture and real-world usability.
                   </p>
                 </div>
               </div>
@@ -30,19 +26,28 @@ const About = () => {
                     QUICK FACTS
                   </h4>
                   <div className="space-y-6">
-                    <div className="border-l-2 border-foreground pl-6">
-                      <h5 className="text-lg font-medium mb-2">University</h5>
-                      <p className="text-muted-foreground">
-                        Misr International University — Computer Science
-                      </p>
+                    <div className="border-l-2 border-foreground pl-6 flex items-start gap-3">
+                      <div className="w-10 h-10 rounded-xl bg-white p-1 border border-border shadow-sm shrink-0 mt-0.5 overflow-hidden flex items-center justify-center">
+                        <img
+                          src="/images/logos/miu.png"
+                          alt="MIU Logo"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <div>
+                        <h5 className="text-lg font-medium mb-1">University</h5>
+                        <p className="text-muted-foreground text-sm">
+                          Misr International University — Computer Science (Software Development Major)
+                        </p>
+                      </div>
                     </div>
                     <div className="border-l-2 border-foreground pl-6">
                       <h5 className="text-lg font-medium mb-2">Year</h5>
-                      <p className="text-muted-foreground">Senior Year</p>
+                      <p className="text-muted-foreground">Senior Year (Fourth Year)</p>
                     </div>
                     <div className="border-l-2 border-foreground pl-6">
                       <h5 className="text-lg font-medium mb-2">Languages</h5>
-                      <p className="text-muted-foreground">Arabic, English</p>
+                      <p className="text-muted-foreground">Arabic (Native), English (Professional)</p>
                     </div>
                   </div>
                 </div>
@@ -53,13 +58,13 @@ const About = () => {
                       <h4 className="text-minimal text-muted-foreground mb-2">
                         INTERESTS
                       </h4>
-                      <p className="text-xl">Tennis Player & Coach</p>
+                      <p className="text-xl">Tennis</p>
                     </div>
                     <div>
                       <h4 className="text-minimal text-muted-foreground mb-2">
                         LOCATION
                       </h4>
-                      <p className="text-xl">New Cairo, Egypt</p>
+                      <p className="text-xl">Cairo, Egypt</p>
                     </div>
                   </div>
                 </div>

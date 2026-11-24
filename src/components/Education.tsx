@@ -17,11 +17,20 @@ const Education = () => {
           <div className="space-y-16">
             <AnimatedSection>
               <div className="group">
-                <div className="flex items-start space-x-6">
-                  <span className="text-minimal text-muted-foreground font-medium mt-1">
-                    01
-                  </span>
-                  <div>
+                <div className="flex flex-col sm:flex-row items-start gap-6">
+                  <div className="flex items-center gap-4 sm:flex-col sm:items-start shrink-0">
+                    <span className="text-minimal text-muted-foreground font-medium">
+                      01
+                    </span>
+                    <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white p-2 border border-border shadow-sm flex items-center justify-center shrink-0 overflow-hidden">
+                      <img
+                        src="/images/logos/miu.png"
+                        alt="Misr International University Logo"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex-1">
                     <h4 className="text-2xl font-light mb-2 text-architectural">
                       Bachelor in Computer Science
                     </h4>
@@ -29,36 +38,15 @@ const Education = () => {
                       MISR INTERNATIONAL UNIVERSITY · 2023 – PRESENT
                     </p>
                     <p className="text-minimal text-muted-foreground mb-4">
-                      SENIOR YEAR · SOFTWARE DEVELOPMENT MAJOR
+                      FOURTH YEAR · MAJORING IN SOFTWARE DEVELOPMENT
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      Relevant Coursework: Web Development, Algorithms, Data Structures,
-                      Object-Oriented Programming, Database Systems, Problem Solving,
-                      Software Engineering, Human-Computer Interaction
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <div className="group">
-                <div className="flex items-start space-x-6">
-                  <span className="text-minimal text-muted-foreground font-medium mt-1">
-                    02
-                  </span>
-                  <div>
-                    <h4 className="text-2xl font-light mb-2 text-architectural">
-                      Summer Internship — Digital Solutions (UI/UX)
-                    </h4>
-                    <p className="text-minimal text-muted-foreground mb-4">
-                      EL ARABY GROUP
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Interned in the Digital Solutions team with a focus on UI/UX design.
-                      Gained hands-on experience contributing to real-world projects,
-                      including user interface research, wireframing, prototyping, and
-                      design improvements for digital products used by actual customers.
+                      <span className="font-medium text-foreground/80">Relevant Coursework:</span>{" "}
+                      Mobile Device Programming, Software Engineering, Principles of
+                      Software Architecture, Principles of Software Design, Software
+                      Validation and Testing, Software Quality Assurance and Evolution,
+                      Software Project Management, Web Development, Human-Computer
+                      Interaction, Algorithms, Data Structures, OOP, Databases
                     </p>
                   </div>
                 </div>
